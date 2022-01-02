@@ -1,13 +1,14 @@
 package Chapter2;
 
 import java.net.Inet4Address;
+import java.net.Inet6Address;
 import java.util.Arrays;
 import java.net.InetAddress;
 
 public class InetDemo2 {
     public static void main(String[] arg) throws Exception {
-        InetAddress ip = Inet4Address.getByName("chandanbhagat.com.np");
-        InetAddress ip1[] = InetAddress.getAllByName("chandanbhagat.com.np");
+        InetAddress ip = Inet4Address.getByName("localhost");
+        InetAddress ip1[] = Inet6Address.getAllByName("localhost");
         byte addr[] = { 72, 3, 2, 12 };
         System.out.println("ip : " + ip);
         System.out.print("\nip1 : " + ip1);
