@@ -1,6 +1,5 @@
 package Chapter2;
 
-import java.io.*;
 import java.net.*;
 
 public class InetDemo {
