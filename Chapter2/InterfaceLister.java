@@ -9,7 +9,7 @@ public class InterfaceLister {
         Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
         while (interfaces.hasMoreElements()) {
             NetworkInterface ni = interfaces.nextElement();
-            System.out.println("Interface Name: " + ni.getName());
+            System.out.println("Interface Name: " + ni.getDisplayName());
         }
     }
 }

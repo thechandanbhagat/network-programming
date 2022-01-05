@@ -9,9 +9,9 @@ import java.util.Arrays;
 
 public class Inet4Add {
     public static void main(String args[]) throws UnknownHostException {
-        String url = "www.geeksforgeeks.org";
+        String url = "localhost";
         Inet4Address ip1 = (Inet4Address) Inet4Address.getByName(url);
-        Inet4Address ip2 = (Inet4Address) InetAddress.getByName("www.yahoo.com");
+        Inet4Address ip2 = (Inet4Address) InetAddress.getByName("chandan.local");
 
         // Following methods checks the property of the thus created object.
         // getAddress() method
@@ -52,6 +52,7 @@ public class Inet4Add {
 
         // hashCode() method
         System.out.println("hashCode : " + ip1.hashCode());
+        System.out.println("hashCode : " + ip2.hashCode());
 
         // equals() method
         System.out.println("ip1==ip2 : " + ip1.equals(ip2));
