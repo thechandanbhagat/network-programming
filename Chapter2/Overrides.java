@@ -1,10 +1,10 @@
 package Chapter2;
 
-public class abc {
+public class Overrides {
     public static void main(String[] args) {
-        abc a = new abc();
+        Overrides a = new Overrides();
         a.x = "Sunil";
-        abc b = new abc();
+        Overrides b = new Overrides();
         b.x = "Sunil";
         System.out.println("For a");
         System.out.println(a.toString());
@@ -31,7 +31,7 @@ public class abc {
 
     @Override
     public boolean equals(Object o) {
-        abc obj = (abc) o;
+        Overrides obj = (Overrides) o;
         return obj.x == this.x;
     }
 }
