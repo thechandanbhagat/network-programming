@@ -7,7 +7,7 @@ public class SpamCheck {
     public static final String BlackHole = "spamhaus.org/sbl";
 
     public static void main(String[] args) {
-        String[] spamList = { "207.34.56.23", "125.12.32.4", "130.130.130.130" };
+        String[] spamList = { "207.34.56.23", "125.12.32.4", "127.0.0.2" };
         for (String spam : spamList) {
             if (isSpam(spam)) {
                 System.out.println("Spam found! " + spam);

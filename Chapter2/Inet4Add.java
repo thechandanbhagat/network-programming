@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class Inet4Add {
     public static void main(String args[]) throws UnknownHostException {
-        String url = "localhost";
+        String url = "chandanbhagat.com.np";
         Inet4Address ip1 = (Inet4Address) Inet4Address.getByName(url);
         Inet4Address ip2 = (Inet4Address) InetAddress.getByName("chandan.local");
 
