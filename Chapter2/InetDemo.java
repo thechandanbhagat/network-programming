@@ -1,6 +1,6 @@
 package Chapter2;
 
-import java.net.*;
+import java.net.InetAddress;
 
 public class InetDemo {
     public static void main(String[] args) {

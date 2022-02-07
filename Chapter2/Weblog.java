@@ -1,7 +1,12 @@
 package Chapter2;
 
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class Weblog {
 

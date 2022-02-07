@@ -1,6 +1,6 @@
 package Chapter2;
 
-import java.net.*;
+import java.net.InetAddress;
 import java.util.concurrent.Callable;
 
 public class LookupTask implements Callable<String> {
