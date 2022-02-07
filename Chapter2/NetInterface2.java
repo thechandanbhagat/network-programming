@@ -1,16 +1,10 @@
 package Chapter2;
 
-//Java program to illustrate various
-//networkInterface class methods.
-import java.net.InetAddress;
-import java.net.InterfaceAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Enumeration;
 
 public class NetInterface2 {
     public static void main(String[] args) throws SocketException,

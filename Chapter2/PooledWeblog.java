@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 // Requires Java 7 for try-with-resources and multi-catch
 public class PooledWeblog {
- private final static int NUM_THREADS = 4;
+ private static final int NUM_THREADS = 4;
  public static void main(String[] args) throws IOException {
      ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
      Queue<LogEntry> results = new LinkedList<LogEntry>();
