@@ -1,5 +1,3 @@
-package Chapter2;
-
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
