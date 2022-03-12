@@ -1,5 +1,3 @@
-package Chapter2;
-
 // Java program to illustrate various
 // Inet4Address class methods
 import java.net.Inet4Address;
