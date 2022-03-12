@@ -1,5 +1,3 @@
-package Chapter2;
-
 import java.net.InetAddress;
 
 public class Addresses {
