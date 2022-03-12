@@ -1,5 +1,3 @@
-package Chapter2;
-
 //Java program to illustrate various
 //networkInterface class methods.
 import java.net.InetAddress;
