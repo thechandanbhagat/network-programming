@@ -1,5 +1,3 @@
-package Chapter2;
-
 public class Overrides {
     public static void main(String[] args) {
         Overrides a = new Overrides();
