@@ -1,9 +1,6 @@
-package Chapter2;
-
 //Java program to illustrate various
 //Inet6Address class methods
 import java.net.Inet6Address;
-import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 
@@ -12,7 +9,7 @@ public class Inet6Add {
     public static void main(String[] args) throws UnknownHostException {
 
         String host = "localhost";
-        byte add[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 };
+        byte[] add = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 };
 
         // getByAddress() method
         Inet6Address ip1 = Inet6Address.getByAddress(host, add, 5);
