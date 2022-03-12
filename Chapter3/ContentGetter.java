@@ -20,9 +20,15 @@ public class ContentGetter {
 
                 System.out.println(o.getClass().getName());
             }
+
+     
         }
         catch (IOException ex) {
             System.out.println(ex);
         }
     }
+
+  
 }
+
+
