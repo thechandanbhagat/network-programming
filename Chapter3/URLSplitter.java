@@ -4,6 +4,7 @@ import java.net.URL;
 public class URLSplitter {
     public static void main(String args[]) {
        splitter("https://google.com");
+       
     }
 
     private static void splitter(String url) {
