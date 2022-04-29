@@ -1,13 +1,14 @@
-import java.net.*;
-import java.text.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.text.ParseException;
 import java.util.Date;
-import java.io.*;
 
 public class TimeClient {
     private static final String HOSTNAME = "time.nist.gov";
 
     public static void main(String[] args) throws IOException, ParseException {
-        Date d = Time.getDateFromNetwork();
+        Date d = TimeClient.getDateFromNetwork();
         System.out.println("It is " + d);
     }
 
