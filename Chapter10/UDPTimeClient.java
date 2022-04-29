@@ -1,5 +1,6 @@
-import java.net.*;
-import java.util.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Date;
 
 public class UDPTimeClient {
     public final static int PORT = 37;
@@ -17,6 +18,7 @@ public class UDPTimeClient {
             System.out.println("Usage: java UDPTimeClient [host]");
             return;
         }
+
         UDPPoke poker = new UDPPoke(host, PORT);
         byte[] response = poker.poke();
         if (response == null) {
@@ -40,3 +42,4 @@ public class UDPTimeClient {
         System.out.println(time);
     }
 }
+
