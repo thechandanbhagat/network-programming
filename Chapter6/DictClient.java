@@ -23,11 +23,9 @@ public class DictClient {
             Writer writer = new OutputStreamWriter(out, "UTF-8");
             writer = new BufferedWriter(writer);
             InputStream in = socket.getInputStream();
-            BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(in, "UTF-8"));
-            for (String word : args) {
-                define(word, writer, reader);
-            }
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+            define("gold", writer, reader);
+            
             writer.write("quit\r\n");
             writer.flush();
         } catch (IOException ex) {
@@ -45,7 +43,7 @@ public class DictClient {
 
     static void define(String word, Writer writer, BufferedReader reader)
             throws IOException, UnsupportedEncodingException {
-        writer.write("DEFINE eng-lat " + word + "\r\n");
+        writer.write("DEFINE english " + word + "\r\n");
         writer.flush();
         for (String line = reader.readLine(); line != null; line = reader.readLine()) {
             if (line.startsWith("250 ")) { // OK
