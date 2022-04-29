@@ -3,7 +3,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class DaytimeClient {
+public class DayTimeClient {
     public static void main(String[] args) {
         String hostname = args.length > 0 ? args[0] : "time.nist.gov";
         Socket socket = null;

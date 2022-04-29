@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Daytime {
+public class DayTime {
     public Date getDateFromNetwork() throws IOException, ParseException {
         try (Socket socket = new Socket("time.nist.gov", 13)) {
             socket.setSoTimeout(15000);

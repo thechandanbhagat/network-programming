@@ -9,31 +9,31 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.net.UnknownHostException;
 
-public class Whois {
+public class WhoIs {
     public final static int DEFAULT_PORT = 43;
     public final static String DEFAULT_HOST = "whois.internic.net";
     private int port = DEFAULT_PORT;
     private InetAddress host;
 
-    public Whois(InetAddress host, int port) {
+    public WhoIs(InetAddress host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    public Whois(InetAddress host) {
+    public WhoIs(InetAddress host) {
         this(host, DEFAULT_PORT);
     }
 
-    public Whois(String hostname, int port)
+    public WhoIs(String hostname, int port)
             throws UnknownHostException {
         this(InetAddress.getByName(hostname), port);
     }
 
-    public Whois(String hostname) throws UnknownHostException {
+    public WhoIs(String hostname) throws UnknownHostException {
         this(InetAddress.getByName(hostname), DEFAULT_PORT);
     }
 
-    public Whois() throws UnknownHostException {
+    public WhoIs() throws UnknownHostException {
         this(DEFAULT_HOST, DEFAULT_PORT);
     }
 
